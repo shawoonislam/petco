@@ -1,0 +1,44 @@
+@import '../variable/variables';
+@import '../mixin/mixins';
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.tittle{
+    margin: 0 auto;
+    text-align: center;
+    h3{
+        @include f($ff, 24px, 800, 1, #f04336);
+        margin-bottom: 18px;
+        margin-top: 200px
+    }
+    h2{
+        @include f($ff, 42px, 900, 1.2, #0a303a);
+        margin-top: 0px;
+        font-style: normal;
+        width: 649px;
+        text-align: center;
+        margin-left: 320px;
+    }
+    
+}
+.accordion-button:focus {
+	z-index: 3;
+	border-color: #86b7fe;
+	outline: 0;
+	box-shadow: none;
+}
+.accordion-body{
+        font-size: 16px;
+        color: #676666;
+        line-height: 28px;
+        font-weight: 400;
+}
